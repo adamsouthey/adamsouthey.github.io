@@ -2161,7 +2161,6 @@ section, summary, time, mark, audio, video {
 
 		#header {
 			position: relative;
-			background-color: red;
 			background-size: cover;
 			background-position: center center;
 			background-attachment: fixed;
@@ -2169,7 +2168,7 @@ section, summary, time, mark, audio, video {
 			text-align: center;
 			padding: 7.5em 0 2em 0;
 			cursor: default;
-			background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+
 
 		}
 
@@ -2259,14 +2258,6 @@ section, summary, time, mark, audio, video {
 			width: 100%;
 			height: 100%;
 			opacity: 0;
-			-moz-transition: opacity 3.5s ease-in-out;
-			-webkit-transition: opacity 3.5s ease-in-out;
-			-ms-transition: opacity 3.5s ease-in-out;
-			transition: opacity 3.5s ease-in-out;
-			-moz-transition-delay: 1.5s;
-			-webkit-transition-delay: 1.5s;
-			-ms-transition-delay: 1.5s;
-			transition-delay: 1.5s;
 		}
 
 		body.homepage.is-preload #header:after {
