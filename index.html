@@ -24,13 +24,88 @@ p{
 	line-height: 45%;
 }
 .logo{
-	height: 200px;
+	height: 150px;
 	width: auto;
 }
 .logoNav{
 	height: 60px;
 	width: auto;
 }
+.link{
+  color: white;
+  opacity: 0.6;
+  position: relative;
+  -webkit-transition: opacity 0.2s ease-in-out 0s;
+  -moz-transition: opacity 0.2s ease-in-out 0s;
+  transition: opacity 0.2s ease-in-out 0s;
+}
+
+.link:hover {
+  opacity: 1;
+	color: white;
+	text-decoration: none;
+}
+
+.link:before {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  width: 100%;
+  height: 2px;
+  z-index: 10;
+  background-color: white;
+  -webkit-transform: scaleX(0);
+  -moz-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.2s ease-in-out 0s;
+  -moz-transition: all 0.2s ease-in-out 0s;
+  transition: all 0.2s ease-in-out 0s;
+}
+
+.link:hover:before {
+  -webkit-transform: scaleX(1);
+  -moz-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+@-webkit-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+@-moz-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+@keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+
+
 </style>
 <body class="homepage is-preload">
 	<div id="page-wrapper">
@@ -65,10 +140,10 @@ p{
 					<p class="splashHeaderLarge">Creating social impact through data science and product development</p>
 					<br />
 					<div class="smallPara">
-					<p"splashHeaderSmall">We work at the confluence of data, technology, and public policy to implement initiatives such as Tech Against Terrorism [link] </p>
+					<p"splashHeaderSmall">We work at the confluence of data, technology, and public policy to implement initiatives such as <a class="link" href="https://www.techagainstterrorism.org/">Tech Against Terrorism</a></p>
 					<p"splashHeaderSmall">and deliver social impact by working with public-sector organisations and NGOs to improve their decision-making capabilities</p>
 				</div>
-	
+
 					<p class="center">COMING SOON</p>
 				</header>
 				<div class="row">
