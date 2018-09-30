@@ -2,168 +2,386 @@
 
 <html>
 <head>
-	<title>QuantSpark Foundation</title>
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-	<link rel="stylesheet" href="assets/css/main.css" />
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-	<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+  <title>Adam Southey</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.6/jquery.fullpage.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.6/jquery.fullpage.extensions.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+  <script type="text/javascript" src="assets/js/mainjs.js"></script>
+  <script src="assets/js/jquery.scrollex.min.js"></script>
+  <script src="assets/js/skel.min.js"></script>
+  <script src="assets/js/util.js"></script>
+
+  <link rel="stylesheet" href="assets/css/main.css" />
+
 </head>
-<style>
-
-body{
-	overflow: hidden;
-}
-.splashHeaderLarge{
-	font-size: 60px !important;
-	line-height: 80px;
-	font-family: "Helvetica Neue", "Open Sans", Helvetica, Arial, sans-serif;
-	font-weight: 200;
-}
-.splashHeaderSmall{
-	font-size: 18px;
-	line-height: 20px;
-	font-weight: 10;
-	letter-spacing: 1px;
-
-}
-p{
-	text-align: center !important;
-}
-.smallPara{
-	line-height: 45%;
-}
-.logo{
-	height: 150px;
-	width: auto;
-}
-.logoNav{
-	height: 60px;
-	width: auto;
-}
-.link{
-	color: white;
-	opacity: 0.6;
-	position: relative;
-	-webkit-transition: opacity 0.2s ease-in-out 0s;
-	-moz-transition: opacity 0.2s ease-in-out 0s;
-	transition: opacity 0.2s ease-in-out 0s;
-}
-
-.link:hover {
-	opacity: 1;
-	color: white;
-	text-decoration: none;
-}
-
-.link:before {
-	content: "";
-	position: absolute;
-	bottom: -2px;
-	width: 100%;
-	height: 2px;
-	z-index: 10;
-	background-color: white;
-	-webkit-transform: scaleX(0);
-	-moz-transform: scaleX(0);
-	transform: scaleX(0);
-	-webkit-transition: all 0.2s ease-in-out 0s;
-	-moz-transition: all 0.2s ease-in-out 0s;
-	transition: all 0.2s ease-in-out 0s;
-}
-
-.link:hover:before {
-	-webkit-transform: scaleX(1);
-	-moz-transform: scaleX(1);
-	transform: scaleX(1);
-}
-/* ---- reset ---- */ body{ margin:0; font:normal 75% Arial, Helvetica, sans-serif; } canvas{ display: block; vertical-align: bottom; } /* ---- particles.js container ---- */ #particles-js{ position:absolute; width: 100%; height: 100%; background-color: #1d7ab7; background-image: url(""); background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; } /* ---- stats.js ---- */ .count-particles{ background: #000022; position: absolute; top: 48px; left: 0; width: 80px; color: #13E8E9; font-size: .8em; text-align: left; text-indent: 4px; line-height: 14px; padding-bottom: 2px; font-family: Helvetica, Arial, sans-serif; font-weight: bold; } .js-count-particles{ font-size: 1.1em; } #stats, .count-particles{ -webkit-user-select: none; margin-top: 5px; margin-left: 5px; } #stats{ border-radius: 3px 3px 0 0; overflow: hidden; } .count-particles{ border-radius: 0 0 3px 3px; }
-
-
-</style>
 <body>
-	<!-- particles.js container --> <div id="particles-js"></div> <!-- stats - count particles --> <div class="count-particles"> <span class="js-count-particles">--</span> particles </div>
-	<div id="page-wrapper">
-		<!-- Nav -->
-		<nav class="navbar navbar-expand-lg navbar-light bg-light">
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-			</button>
-			<div id="navbarNavDropdown" class="navbar-collapse collapse">
-				<ul class="navbar-nav mr-auto">
-					<img class="logoNav" src="images/image.png">
-				</ul>
-				<ul class="navbar-nav">
-					<!--
-					<li class="nav-item">
-					<a class="nav-link">Home</a>
-				</li>
-				<li class="nav-item">
-				<a class="nav-link">About</a>
-			</li> -->
-		</ul>
-	</div>
-</nav>
-<!-- Header -->
-<div id="header">
-	<!-- Inner -->
-	<div class="inner">
-		<header>
-			<img class="logo" src="images/image1.png">
-			<br />
-			<br />
-			<br />
-			<p class="splashHeaderLarge">Creating social impact through </p>
-			<p class="splashHeaderLarge">data science and product development</p>
-			<br />
-			<br />
-			<div class="smallPara">
-				<p class="splashHeaderSmall">We work at the confluence of data, technology, and public policy to implement initiatives such as <a class="link" href="https://www.techagainstterrorism.org/">Tech Against Terrorism</a></p>
-				<p class="splashHeaderSmall">and deliver social impact by working with public-sector organisations and NGOs to improve their decision-making capabilities</p>
-			</div>
-			<br />
-		</header>
-		<div class="row">
-			<div class="col-12">
-				<br />
-				<br />
-				<br />
-				<!-- Copyright -->
-				<div class="copyright">
-					<ul class="menu">
-						<li style="font-size:20px;">info@quantspark.foundation</li>
-					</ul>
-				</div>
-			</div>
-		</div>
-	</div>
 
-	<!-- <nav id="nav">
+  <div id="fullpage">
 
-	<ul>
-	<li><a href="index.html">Home</a></li>
-</ul>
-</li>
-</ul>
-</nav> -->
+    <div class="section first" data-anchor="page1">
+      <!-- Header -->
+      <header id="header" class="alt">
+        <a href="#menu">Explore</a>
+      </header>
 
-</div>
+      <!-- Nav -->
+      <nav id="menu">
+        <ul class="links">
+          <li><a href="#page1">Home</a></li>
+          <li><a href="#page2">Projects</a></li>
+          <li><a href="#page3">Technologies</a></li>
+          <li><a href="#page4">About Me</a></li>
+        </ul>
+      </nav>
+      <!-- <a href="#page3" class="front buttn">Portfolio</a> -->
 
-<!-- Scripts -->
-<script src="assets/js/jquery.min.js"></script>
-<script src="assets/js/jquery.dropotron.min.js"></script>
-<script src="assets/js/jquery.scrolly.min.js"></script>
-<script src="assets/js/jquery.scrollex.min.js"></script>
-<script src="assets/js/browser.min.js"></script>
-<script src="assets/js/breakpoints.min.js"></script>
-<script src="assets/js/util.js"></script>
-<script src="assets/js/main.js"></script>
-<script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> <!-- stats.js lib --> <script src="http://threejs.org/examples/js/libs/stats.min.js"></script>
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-<script>
-particlesJS("particles-js", {"particles":{"number":{"value":80,"density":{"enable":true,"value_area":800}},"color":{"value":"#ffffff"},"shape":{"type":"circle","stroke":{"width":0,"color":"#000000"},"polygon":{"nb_sides":5},"image":{"src":"img/github.svg","width":100,"height":100}},"opacity":{"value":0.5,"random":false,"anim":{"enable":false,"speed":1,"opacity_min":0.1,"sync":false}},"size":{"value":3,"random":true,"anim":{"enable":false,"speed":40,"size_min":0.1,"sync":false}},"line_linked":{"enable":true,"distance":150,"color":"#ffffff","opacity":0.4,"width":1},"move":{"enable":true,"speed":6,"direction":"none","random":false,"straight":false,"out_mode":"out","bounce":false,"attract":{"enable":false,"rotateX":600,"rotateY":1200}}},"interactivity":{"detect_on":"canvas","events":{"onhover":{"enable":true,"mode":"repulse"},"onclick":{"enable":true,"mode":"push"},"resize":true},"modes":{"grab":{"distance":400,"line_linked":{"opacity":1}},"bubble":{"distance":400,"size":40,"duration":2,"opacity":8,"speed":3},"repulse":{"distance":200,"duration":0.4},"push":{"particles_nb":4},"remove":{"particles_nb":2}}},"retina_detect":true});
-</script>
-</body>
-</html>
+      <!-- Banner -->
+      <section class="banner full">
+        <article>
+          <img src="images/slide07.jpg" alt="" />
+          <div class="inner">
+            <header>
+              <p>Hello, I'm <span class="nameClass">Adam Southey</span></p>
+              <p>I'm a Full Stack Web Developer</p>
+              <div class="container">
+                <ul class="icons">
+                  <li><a href="https://github.com/adamsouthey" target="_blank" class="icon fa-github"><span class="label">Github</span></a><br>Github</li>
+                  <li><a href="https://www.instagram.com/adamsansz/" target="_blank" class="icon fa-instagram"><span class="label">Instagram</span></a><br>Instagram</li>
+                  <li><a href="https://www.linkedin.com/in/adamsouthey/" target="_blank" class="icon fa-linkedin"><span class="label">LinkedIn</span></a><br>LinkedIn</li>
+                  <li><a href="mailto:adamjsouthey@gmail.com?subject=HiAdam" target="_blank" class="icon fa-envelope-o"><span class="label">Email</span></a><br>Email</li>
+              </ul>
+
+              </div>
+            </header>
+          </div>
+        </article>
+
+        <article>
+          <img src="images/slide00.jpg" alt="" />
+          <div class="inner">
+            <header>
+              <p>Hello, I'm <span class="nameClass">Adam Southey</span></p>
+              <p>I'm a Full Stack Web Developer</p>
+              <div class="container">
+                <ul class="icons">
+                  <li><a href="https://github.com/adamsouthey" target="_blank" class="icon fa-github"><span class="label">Github</span></a><br>Github</li>
+                  <li><a href="https://www.instagram.com/adamsansz/" target="_blank" class="icon fa-instagram"><span class="label">Instagram</span></a><br>Instagram</li>
+                  <li><a href="https://www.linkedin.com/in/adam-southey/" target="_blank" class="icon fa-linkedin"><span class="label">LinkedIn</span></a><br>LinkedIn</li>
+                  <li><a href="mailto:adamjsouthey@gmail.com?subject=HiAdam" target="_blank" class="icon fa-envelope-o"><span class="label">Email</span></a><br>Email</li>
+                </ul>
+              </div>
+            </header>
+          </div>
+        </article>
+
+        <article>
+          <img src="images/slide10.jpg"  alt="" />
+          <div class="inner">
+            <header>
+              <p>Hello, I'm <span class="nameClass">Adam Southey</span></p>
+              <p>I'm a Full Stack Web Developer</p>
+              <div class="container">
+                <ul class="icons">
+                  <li><a href="https://github.com/adamsouthey" target="_blank" class="icon fa-github"><span class="label">Github</span></a><br>Github</li>
+                  <li><a href="https://www.instagram.com/adamsansz/" target="_blank" class="icon fa-instagram"><span class="label">Instagram</span></a><br>Instagram</li>
+                  <li><a href="https://www.linkedin.com/in/adam-southey/" target="_blank" class="icon fa-linkedin"><span class="label">LinkedIn</span></a><br>LinkedIn</li>
+                  <li><a href="mailto:adamjsouthey@gmail.com?subject=HiAdam" target="_blank" class="icon fa-envelope-o"><span class="label">Email</span></a><br>Email</li>
+                </ul>
+              </div>
+            </header>
+          </div>
+        </article>
+
+        <article>
+          <img src="images/new01.jpg" alt="" />
+          <div class="inner">
+            <header>
+              <p>Hello, I'm <span class="nameClass">Adam Southey</span></p>
+              <p>I'm a Full Stack Web Developer</p>
+              <div class="container">
+                <ul class="icons">
+                  <li><a href="https://github.com/adamsouthey" target="_blank" class="icon fa-github"><span class="label">Github</span></a><br>Github</li>
+                  <li><a href="https://www.instagram.com/adamsansz/" target="_blank" class="icon fa-instagram"><span class="label">Instagram</span></a><br>Instagram</li>
+                  <li><a href="https://www.linkedin.com/in/adam-southey/" target="_blank" class="icon fa-linkedin"><span class="label">LinkedIn</span></a><br>LinkedIn</li>
+                  <li><a href="mailto:adamjsouthey@gmail.com?subject=HiAdam" target="_blank" class="icon fa-envelope-o"><span class="label">Email</span></a><br>Email</li>
+                </ul>
+              </div>
+            </header>
+          </div>
+        </article>
+
+        <article>
+          <img src="images/new02.jpg" alt="" />
+          <div class="inner">
+            <header>
+              <p>Hello, I'm <span class="nameClass">Adam Southey</span></p>
+              <p>I'm a Full Stack Web Developer</p>
+              <div class="container">
+                <ul class="icons">
+                  <li><a href="https://github.com/adamsouthey" target="_blank" class="icon fa-github"><span class="label">Github</span></a><br>Github</li>
+                  <li><a href="https://www.instagram.com/adamsansz/" target="_blank" class="icon fa-instagram"><span class="label">Instagram</span></a><br>Instagram</li>
+                  <li><a href="https://www.linkedin.com/in/adam-southey/" target="_blank" class="icon fa-linkedin"><span class="label">LinkedIn</span></a><br>LinkedIn</li>
+                  <li><a href="mailto:adamjsouthey@gmail.com?subject=HiAdam" target="_blank" class="icon fa-envelope-o"><span class="label">Email</span></a><br>Email</li>
+                </ul>
+              </div>
+            </header>
+          </div>
+        </article>
+
+        <article>
+          <img src="images/new03.jpg" alt="" />
+          <div class="inner">
+            <header>
+              <p>Hello, I'm <span class="nameClass">Adam Southey</span></p>
+              <p>I'm a Full Stack Web Developer</p>
+              <div class="container">
+                <ul class="icons">
+                  <li><a href="https://github.com/adamsouthey" target="_blank" class="icon fa-github"><span class="label">Github</span></a><br>Github</li>
+                  <li><a href="https://www.instagram.com/adamsansz/" target="_blank" class="icon fa-instagram"><span class="label">Instagram</span></a><br>Instagram</li>
+                  <li><a href="https://www.linkedin.com/in/adam-southey/" target="_blank" class="icon fa-linkedin"><span class="label">LinkedIn</span></a><br>LinkedIn</li>
+                  <li><a href="mailto:adamjsouthey@gmail.com?subject=HiAdam" target="_blank" class="icon fa-envelope-o"><span class="label">Email</span></a><br>Email</li>
+                </ul>
+              </div>
+            </header>
+          </div>
+        </article>
+
+        <article>
+          <img src="images/new04.jpg" alt="" />
+          <div class="inner">
+            <header>
+              <p>Hello, I'm <span class="nameClass">Adam Southey</span></p>
+              <p>I'm a Full Stack Web Developer</p>
+              <div class="container">
+                <ul class="icons">
+                  <li><a href="https://github.com/adamsouthey" target="_blank" class="icon fa-github"><span class="label">Github</span></a><br>Github</li>
+                  <li><a href="https://www.instagram.com/adamsansz/" target="_blank" class="icon fa-instagram"><span class="label">Instagram</span></a><br>Instagram</li>
+                  <li><a href="https://www.linkedin.com/in/adam-southey/" target="_blank" class="icon fa-linkedin"><span class="label">LinkedIn</span></a><br>LinkedIn</li>
+                  <li><a href="mailto:adamjsouthey@gmail.com?subject=HiAdam" target="_blank" class="icon fa-envelope-o"><span class="label">Email</span></a><br>Email</li>
+                </ul>
+              </div>
+            </header>
+          </div>
+        </article>
+
+
+        <article>
+          <img src="images/new07.jpg" alt="" />
+          <div class="inner">
+            <header>
+              <p>Hello, I'm <span class="nameClass">Adam Southey</span></p>
+              <p>I'm a Full Stack Web Developer</p>
+              <div class="container">
+                <ul class="icons">
+                  <li><a href="https://github.com/adamsouthey" target="_blank" class="icon fa-github"><span class="label">Github</span></a><br>Github</li>
+                  <li><a href="https://www.instagram.com/adamsansz/" target="_blank" class="icon fa-instagram"><span class="label">Instagram</span></a><br>Instagram</li>
+                  <li><a href="https://www.linkedin.com/in/adam-southey/" target="_blank" class="icon fa-linkedin"><span class="label">LinkedIn</span></a><br>LinkedIn</li>
+                  <li><a href="mailto:adamjsouthey@gmail.com?subject=HiAdam" target="_blank" class="icon fa-envelope-o"><span class="label">Email</span></a><br>Email</li>
+                </ul>
+              </div>
+            </header>
+          </div>
+        </article>
+
+        <article>
+          <img src="images/new08.jpg" alt="" />
+          <div class="inner">
+            <header>
+              <p>Hello, I'm <span class="nameClass">Adam Southey</span></p>
+              <p>I'm a Full Stack Web Developer</p>
+              <div class="container">
+                <ul class="icons">
+                  <li><a href="https://github.com/adamsouthey" target="_blank" class="icon fa-github"><span class="label">Github</span></a><br>Github</li>
+                  <li><a href="https://www.instagram.com/adamsansz/" target="_blank" class="icon fa-instagram"><span class="label">Instagram</span></a><br>Instagram</li>
+                  <li><a href="https://www.linkedin.com/in/adam-southey/" target="_blank" class="icon fa-linkedin"><span class="label">LinkedIn</span></a><br>LinkedIn</li>
+                  <li><a href="mailto:adamjsouthey@gmail.com?subject=HiAdam" target="_blank" class="icon fa-envelope-o"><span class="label">Email</span></a><br>Email</li>
+                </ul>
+              </div>
+            </header>
+          </div>
+        </article>
+      </section>
+    </div>
+
+
+
+
+
+    <div class="section secondary" data-anchor="page2">
+      <div class="projectsContainer">
+        <!-- One -->
+
+        <div class="slide">
+          <div class="projectsBackground">
+            <div class="projectsContent">
+              <h3 class="projectTitle">Project 4</h3>
+              <div class="imageContainer">
+                <img id ="projectImage" src="images/P4Mod.png" alt="" />
+              </div>
+
+              <div class="inner">
+                <p>ReactJS</p>
+                <!-- <h4>Project 4<h4> -->
+                <h3>The Mern Stack App</h3>
+              </div>
+              <p class="projectText"> For my final project I have built an application using ReactJS. It aims to connects charities with local food retailers so surplus food can be shared with those less fortunate. I planned for my project using wireframes and Trello. I incorporated Google Maps and Google Autocomplete APIs to display the location of both food retailers and local charities. Users registering as a charity are able to see their location on a map and view nearby food retailers along with their contact information within a 3000m radius . I styled my application using Bootstrap and tested front end using mocha and chai.</p>
+              <footer class="align-center">
+                <a class="links" href="https://github.com/adamsouthey/WDI-PROJECT-4" target="_blank">GitHub</a>
+                <a class="links" href="https://hidden-peak-69323.herokuapp.com/" target="_blank">Heroku</a>
+              </footer>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="slide">
+          <div class="projectsBackground">
+            <div class="projectsContent">
+              <h3 class="projectTitle">Project 3</h3>
+              <div class="imageContainer">
+                <img id ="projectImage" src="images/P3Mod.png" alt="" />
+              </div>
+
+              <div class="content">
+                <header class="inner">
+                  <p>Angular</p>
+                  <h3>The Mean Stack App</h3>
+                </header>
+                <p class="projectText">
+                  The third project aimed to create an online platform for users to find meetup groups at their chosen location to meet people with similar interests. The application supports worldwide searches and displays their chosen meetup location on a map. We built this application using AngularJS. This project required planning using wireframes and Trello and a high degree of communication as we were committing to the same Git repository. I was particularly proud of the the ability for users to cache their meetup search entries. I was also happy with the styling for this project as we kept the design consistent across the website and made it fully responsive. For styling, we used the Bulma framework.</p>
+                  <footer class="align-center">
+                    <a class="links" href="https://github.com/adamsouthey/wdi-group-project" target="_blank">GitHub</a>
+                    <a class="links" href="https://social-city.herokuapp.com/" target="_blank">Heroku</a>
+                  </footer>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="slide">
+            <div class="projectsBackground">
+              <div class="projectsContent">
+                <h3 class="projectTitle">Project 2</h3>
+                <div class="imageContainer">
+                  <img id ="projectImage" src="images/P2Mod.png" alt="" />
+                </div>
+
+                <div class="content">
+                  <header class="align-center">
+                    <p>Node.js</p>
+                    <h3>Google Maps App with an API</h3>
+                  </header>
+                  <p class="projectText"> For my second project I created a website to be used by dive enthusiasts where they can share their recent dive experiences, the location of their dive and provide a small review. For this project I
+                    used Express.js and MongoDB. I consumed the Google Maps API and gave users the ability to provide information about their dive. My main index page displayed logged dives using a grid system from Bootstrap. A user could then click on an individual dive to find out more information.</p>
+                    <footer class="align-center">
+                      <a class="links" href="https://github.com/adamsouthey/wdi-second-project" target="_blank">GitHub</a>
+                      <a class="links" href="https://peaceful-everglades-97488.herokuapp.com/" target="_blank">Heroku</a>
+                    </footer>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="slide">
+              <div class="projectsBackground">
+                <div class="projectsContent">
+                  <h3 class="projectTitle">Project 1</h3>
+                  <div class="imageContainer">
+                    <img id ="projectImage" src="images/P1Mod.png" alt="" />
+                  </div>
+
+                  <div class="content">
+                    <header class="align-center">
+                      <p>Javascript</p>
+                      <h3>Build a Javascript Game</h3>
+                    </header>
+                    <p class="projectText"> For my first project I created a game using HTML5, CSS, JavaScript and jQuery. I built an interactive card matching memory game where users must find cards with matching numbers to score a point and remove that pair from the board. I included 5 levels of difficulty (decreased time with increased difficulty). I styled my application with CSS and implemented the functionality for a user to restart a current level if they failed to find the pairs.  </p>
+                    <footer class="align-center">
+                      <a class="links" href="https://github.com/adamsouthey/wdi-first-project" target="_blank">GitHub</a>
+                      <a class="links" href="https://memarray-game.herokuapp.com" target="_blank">Heroku</a>
+                    </footer>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ICONS  -->
+
+        <div class="section third" data-anchor="page3">
+          <div class="projectsContainer">
+
+            <section id="two" class="wrapper style3">
+
+              <div class="inner">
+                <header class="align-center">
+                  <div class = "socialIcons">
+                    <i class="devicon-angularjs-plain-wordmark"></i>
+                    <i class="devicon-express-original-wordmark"></i>
+                    <i class="devicon-jquery-plain-wordmark"></i>
+                    <i class="devicon-javascript-plain wordmark"></i>
+                    <i class="devicon-mocha-plain"></i>
+                    <br>
+                    <i class="devicon-nodejs-plain-wordmark"></i>
+                    <i class="devicon-rails-plain-wordmark"></i>
+                    <i class="devicon-react-original-wordmark"></i>
+                    <i class="devicon-ruby-plain-wordmark"></i>
+                    <i class="devicon-atom-original-wordmark"></i>
+                    <br>
+                    <i class="devicon-babel-plain"></i>
+                    <i class="devicon-bootstrap-plain-wordmark"></i>
+                    <i class="devicon-bower-line-wordmark"></i>
+                    <i class="devicon-css3-plain-wordmark"></i>
+                    <i class="devicon-git-plain-wordmark"></i>
+                    <br>
+                    <i class="devicon-github-plain-wordmark"></i>
+                    <i class="devicon-gulp-plain"></i>
+                    <i class="devicon-html5-plain-wordmark"></i>
+                    <i class="devicon-postgresql-plain-wordmark"></i>
+                    <i class="devicon-sass-original"></i>
+                    <br>
+                  </div>
+
+                </header>
+              </div>
+            </section>
+          </div>
+        </div>
+
+        <!-- ABOUT ME -->
+
+        <div class="section fourth" data-anchor="page4">
+
+
+          <div class="aboutMeImage">
+            <a href="#"><img class="aboutImage" src="images/AdamProfile.png" alt="" /></a>
+          </div>
+
+          <div class="aboutMeText">
+            <div class="textHeaderContainer">
+              <h1 class="aboutHeader">Hello!</h1>
+              <h2 class="aboutHeaderName">My name is Adam.</h2>
+              <h2 class="aboutHeaderText">I'm a science graduate turned web developer seeking new development opportunities in London.</h2>
+              <p class="aboutText">
+                I enjoy creating and using intuitive products with precise visual interfaces. I try to visualise the user's experience and behaviour in order to create the optimal solution to every project.
+                I have recently completed the Web Development Immersive programme at General Assembly, London. Please find a link to my project work <a class="projectLink" href="#page2">here.</a>
+              </p>
+              <p class="aboutText">
+                When I'm not coding, you can surely find me practising taekwondo, swimming in the pool or volunteering at a local homeless shelter. I also make a mean spaghetti bolognese!
+              </p>
+              <p class="aboutTextContact">
+                If you want to say hi, please contact me at <a class="emailLink" href="mailto:adamjsouthey@gmail.com?subject=HiAdam"><span>adamjsouthey@gmail.com</span></a>
+              </p>
+              <a class="homeLink" href="#page1">Return Home</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </body>
+    </html>
